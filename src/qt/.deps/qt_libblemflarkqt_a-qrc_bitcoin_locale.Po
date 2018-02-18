@@ -1,0 +1,4 @@
+qt/qt_libblemflarkqt_a-qrc_blemflark_locale.o: qt/qrc_blemflark_locale.cpp \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

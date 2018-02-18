@@ -1,0 +1,1 @@
+qt/qt_libblemflarkqt_a-qrc_blemflark.o: qt/qrc_blemflark.cpp

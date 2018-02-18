@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Blemflark Core
+Comment=Connect to the Blemflark P2P Network
+Comment[de]=Verbinde mit dem Blemflark peer-to-peer Netzwerk
+Comment[fr]=Blemflark, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Blemflark, eşten eşe kriptografik sanal para birimi
+Exec=blemflark-qt %u
+Terminal=false
+Type=Application
+Icon=blemflark128
+MimeType=x-scheme-handler/blemflark;
+Categories=Office;Finance;

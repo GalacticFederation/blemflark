@@ -1,0 +1,33 @@
+# /etc/conf.d/blemflarkd: config file for /etc/init.d/blemflarkd
+
+# Config file location
+#BLEMFLARKD_CONFIGFILE="/etc/blemflark/blemflark.conf"
+
+# What directory to write pidfile to?  (created and owned by $BLEMFLARKD_USER)
+#BLEMFLARKD_PIDDIR="/var/run/blemflarkd"
+
+# What filename to give the pidfile
+#BLEMFLARKD_PIDFILE="${BLEMFLARKD_PIDDIR}/blemflarkd.pid"
+
+# Where to write blemflarkd data (be mindful that the blockchain is large)
+#BLEMFLARKD_DATADIR="/var/lib/blemflarkd"
+
+# User and group to own blemflarkd process
+#BLEMFLARKD_USER="blemflark"
+#BLEMFLARKD_GROUP="blemflark"
+
+# Path to blemflarkd executable
+#BLEMFLARKD_BIN="/usr/bin/blemflarkd"
+
+# Nice value to run blemflarkd under
+#BLEMFLARKD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#BLEMFLARKD_OPTS=""
+
+# The timeout in seconds OpenRC will wait for blemflarkd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BLEMFLARKD_SIGTERM_TIMEOUT=60

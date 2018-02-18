@@ -1,0 +1,22 @@
+[Unit]
+Description=Blemflark's distributed currency daemon
+After=network.target
+
+[Service]
+User=blemflark
+Group=blemflark
+
+Type=forking
+PIDFile=/var/lib/blemflarkd/blemflarkd.pid
+ExecStart=/usr/bin/blemflarkd -daemon -pid=/var/lib/blemflarkd/blemflarkd.pid \
+-conf=/etc/blemflark/blemflark.conf -datadir=/var/lib/blemflarkd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

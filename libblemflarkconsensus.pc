@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Blemflark Core consensus library
+Description: Library for the Blemflark consensus protocol.
+Version: 0.04.1
+Libs: -L${libdir} -lblemflarkconsensus
+Cflags: -I${includedir}
+Requires.private: libcrypto

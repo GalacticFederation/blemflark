@@ -1,0 +1,8 @@
+/usr/bin/blemflark-cli		--	gen_context(system_u:object_r:blemflark_exec_t,s0)
+/usr/sbin/blemflarkd		--	gen_context(system_u:object_r:blemflark_exec_t,s0)
+/usr/lib(64)?/blemflark/blemflarkd		--	gen_context(system_u:object_r:blemflark_exec_t,s0)
+
+/etc/blemflark(/.*)?		gen_context(system_u:object_r:blemflark_conf_t,s0)
+/var/lib/blemflark(/.*)?		gen_context(system_u:object_r:blemflark_var_lib_t,s0)
+
+(/var)?/run/blemflarkd(/.*)?   gen_context(system_u:object_r:blemflark_var_run_t,s0)
